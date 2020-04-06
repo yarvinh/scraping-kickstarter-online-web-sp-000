@@ -8,7 +8,7 @@
       #  Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
       html = File.read('fixtures/kickstarter.html')
       kickstarter = Nokogiri::HTML(html)
-      project.css("h2.bbcard_name strong a").text
+      kickstarter.css("h2.bbcard_name strong a").text
        #binding.pry
  end
 create_project_hash
